@@ -21,13 +21,13 @@ if(isset($_GET["id"]) && !empty($_GET["id"]))
 }
 else 
 {
-    Header("Location: index.php");
+    Header("Location: ../index.php");
 }
 
 ?>
 
 <br>
-<form method="POST" action="data.php">
+
   Titre : <?php echo $article["titre"]; ?>
  <br>
   Description : <?php echo $article["contenu"]; ?>
@@ -35,7 +35,7 @@ else
   Date de l'article : <?php echo $article["date_publication"]; ?>
 
 
-</form>
+
 
     
 </body>

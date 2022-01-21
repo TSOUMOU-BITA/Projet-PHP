@@ -3,7 +3,7 @@
 if (isset($_POST["titre"], $_POST["contenu"]) && !empty($_POST["titre"]) && !empty($_POST["contenu"]))
 {
     $titre = htmlspecialchars(addslashes($_POST["titre"]));
-    $contenu = htmlspecialchars(addslashes($_POST["contenu"]));
+    $contenu = nl2br(htmlspecialchars(addslashes($_POST["contenu"])));
     $NOW = date("Y-m-d H:i:s");
 
 
@@ -15,7 +15,7 @@ if (isset($_POST["titre"], $_POST["contenu"]) && !empty($_POST["titre"]) && !emp
     $request->execute(array($titre,$contenu,$NOW)); 
     // $request->execute(); 
 
-    Header("Location:index.php");
+    Header("Location: ../index.php");
     
 
     

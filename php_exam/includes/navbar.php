@@ -17,7 +17,7 @@
         <nav class="navbar">
             <a href="index.php">home</a>
             <a href="new.php">New</a>
-            <a href="#Edit-4">Edit</a>
+            <a href="edit.php">Edit</a>
             <a href="#Account-5">Account</a>
             <a href="#Connexion Admin/Panel Admin-6">Connexion Admin/Panel Admin</a>
         </nav>
