@@ -9,6 +9,7 @@
 
 </head>
 <body>
+<?php include "includes/navbar.php";?>
 <form method="POST" action="data.php">
   titre : <br/>
   <input type="text" name="titre" required /><br/>

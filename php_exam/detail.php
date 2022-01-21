@@ -7,6 +7,8 @@
     <title>Détail article</title>
 </head>
 <body>
+<?php include "includes/navbar.php";?>
+<br>
 <?php
 $db = new PDO('mysql:host=localhost;dbname=php_alex', 'root', '');
 if(isset($_GET["id"]) && !empty($_GET["id"]))
